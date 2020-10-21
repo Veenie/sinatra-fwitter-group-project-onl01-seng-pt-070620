@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  get '/users/:id' do
+  get '/users/:slug' do
     @user = User.find(params[:id])
     erb :'users/show'
   end
